@@ -1,0 +1,111 @@
+---
+title: "Assignment 0"
+author: "Mitchell Sharkey"
+date: '2016-01-29'
+output: html_document
+---
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+####Computing percentage of life spent at unniversity/collage
+```{r}
+(2016-2014)/(2016-1995)*100
+```
+
+####Computing the same equation using variables
+```{r}
+(year - unni)/(year - born)*100
+```
+
+####Sum of numbers in vector
+```{r}
+v=c(4,5,8,11)
+sum(v)
+```
+
+####Ploting 100 random values
+```{r}
+x = rnorm(100)
+plot (x)
+```
+
+
+####Help or man page of the function square root
+```{r}
+help(sqrt)
+```
+#####abs(x) computes the absolute value of x, sqrt(x) computes the (principal) square root of x, ???{x}
+
+####R scipt 
+```{r firstscript}
+  x = rnorm(100)
+  plot (x)
+```
+
+####Numbers 31 to 60 into a matrix 5 columns, 6 rows
+```{r}
+p = seq(from = 31, to = 60, by = 1)
+mymat = matrix(p, nrow = 6, ncol = 5)
+```
+
+#####Data Frame
+```{r}
+x1 = 100
+x2 = 100
+x3 = 100
+t = data.frame(a = c(x1), b =c(x1 + x2), c = c(x1 + x2 +x3))
+plot(t)
+sd(t)
+```
+
+
+####Not available data
+```{r firstscript}
+L = list(one=1, two=c(1,2), five=seq(0, 1, length=5))
+L
+names(L)
+
+plot(rnorm(100), type="l", col="gold")
+hist(rnorm(100))
+plot(t$a, type="l", ylim=range(t), lwd=3, col=rgb(1,0,0,0.3))
+lines(t$b, type="s", lwd=2, col=rgb(0.3,0.4,0.3,0.9))
+points(t$c, pch=20, cex=4, col=rgb(0,0,1,0.3))
+```
+
+
+
+####Not available data 9
+```{r firstscript}
+  x = rnorm(100)
+  mean(sqrt(x))
+```
+####Warning message:In sqrt(x) : NaNs produced
+
+
+
+####For Loop
+```{r firstscript}
+x = seq(from=1, to=100)
+s = c()
+for(i in 1:100)
+  {
+  if(x < 5 && x > 90)
+    
+  }
+  
+```
+
+####function
+```{r firstscript}
+  fun1 = function()
+```
+
+
+
+
+##### The end
+
+
+
